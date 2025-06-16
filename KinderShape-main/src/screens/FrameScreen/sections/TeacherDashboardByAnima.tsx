@@ -249,7 +249,8 @@ export const TeacherDashboardByAnima = (): JSX.Element => {
           {activeMenu === "/gallery" && (
             <div>
               <h2 className="text-2xl font-bold mb-4">Галерея</h2>
-              {/* Add gallery content here */}
+              <p className="text-gray-700">Посетите нашу галерею проектов:</p>
+              <a href="https://kinder-shape3-d-xn27.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">KinderShape Проекты</a>
             </div>
           )}
            {activeMenu === "/archive" && (
@@ -261,7 +262,8 @@ export const TeacherDashboardByAnima = (): JSX.Element => {
            {activeMenu === "/resources" && (
             <div>
               <h2 className="text-2xl font-bold mb-4">Ресурсы</h2>
-              {/* Add resources content here */}
+              <p className="text-gray-700">Посмотрите наши ресурсы:</p>
+              <a href="https://kinder-shape3-d-xn27.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ресурсы KinderShape</a>
             </div>
           )}
         </div>

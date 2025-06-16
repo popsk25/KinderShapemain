@@ -117,7 +117,8 @@ export const StudentDashboardByAnima = (): JSX.Element => {
           {activeMenu === "/gallery" && (
             <div>
               <h2 className="text-2xl font-bold mb-4">Галерея</h2>
-              {/* Add gallery content here */}
+              <p className="text-gray-700">Посетите нашу галерею проектов:</p>
+              <a href="https://kinder-shape3-d-xn27.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">KinderShape Проекты</a>
             </div>
           )}
           {activeMenu === "/my-class" && (
@@ -129,7 +130,8 @@ export const StudentDashboardByAnima = (): JSX.Element => {
           {activeMenu === "/my-projects" && (
             <div>
               <h2 className="text-2xl font-bold mb-4">Мои проекты</h2>
-              {/* Add my projects content here */}
+              <p className="text-gray-700">Посмотрите свои проекты на платформе:</p>
+              <a href="https://kinder-shape3-d-xn27.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Мои проекты KinderShape</a>
             </div>
           )}
           {activeMenu === "/resources" && (
