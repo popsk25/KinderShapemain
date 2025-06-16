@@ -79,10 +79,7 @@ export const StudentDashboardByAnima = (): JSX.Element => {
           </div>
           <div
             className={`flex items-center gap-2 px-4 py-2 hover:bg-[#f9ae33]/20 cursor-pointer rounded-r-xl ${activeMenu === "/resources" ? "bg-[#f9ae33]/20" : ""}`}
-            onClick={() => {
-              setActiveMenu("/resources");
-              navigate("/resources"); // Navigate to resources
-            }}
+            onClick={() => window.open("https://kinder-shape3-d-xn27.vercel.app/", "_blank")}
           >
             <img src="/Gallery.png" alt="Ресурсы" className="w-6 h-6" />
             <span className="text-[#505050] font-[Alfa_Slab_One] text-base">Ресурсы</span>
