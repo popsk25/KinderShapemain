@@ -1,0 +1,1 @@
+export { VishpanelByAnima } from "./VishpanelByAnima";
