@@ -1,7 +1,5 @@
 import React from "react";
 import { Card, CardContent } from "../../components/ui/card";
-import { PodvalByAnima } from "../FrameScreen/sections/PodvalByAnima/PodvalByAnima";
-import { VishpanelByAnima } from "../FrameScreen/sections/VishpanelByAnima/VishpanelByAnima";
 import { useNavigate } from "react-router-dom";
 
 export const ResourcesScreen = (): JSX.Element => {
@@ -9,7 +7,7 @@ export const ResourcesScreen = (): JSX.Element => {
 
   return (
     <div className="bg-white flex flex-col items-center w-full min-h-screen">
-      <VishpanelByAnima onAuthClick={() => navigate("/select-role")} />
+      {/* <VishpanelByAnima onAuthClick={() => navigate("/select-role")} /> */}
       {/* Main title section, using image from Figma as background */}
       <section
         className="relative w-[1195px] h-[439px] mx-auto"
@@ -110,7 +108,7 @@ export const ResourcesScreen = (): JSX.Element => {
       </section>
 
       {/* Footer */}
-      <PodvalByAnima />
+      {/* <PodvalByAnima /> */}
     </div>
   );
 }; 
