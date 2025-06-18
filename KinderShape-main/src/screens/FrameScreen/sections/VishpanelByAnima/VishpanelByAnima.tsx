@@ -7,18 +7,20 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
 } from "../../../../components/ui/navigation-menu";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const VishpanelByAnima = ({ onAuthClick }: { onAuthClick?: () => void }): JSX.Element => {
+  const navigate = useNavigate();
   return (
     <header className="w-full">
       <div className="relative w-screen left-1/2 right-1/2 -translate-x-1/2 min-h-[70px] md:min-h-[90px] [background:linear-gradient(90deg,rgb(52,164,101)_24%,rgb(249,174,51)_85%)]">
         <div className="flex items-center justify-between px-4 h-full max-w-[1446px] mx-auto">
           <div className="flex items-center h-full p-0 m-0">
             <img
-              className="h-full max-h-[70px] md:max-h-[90px] w-auto object-contain"
+              className="h-full max-h-[70px] md:max-h-[90px] w-auto object-contain cursor-pointer"
               alt="Logo"
               src="/rectangle-575.png"
+              onClick={() => navigate("/")}
             />
           </div>
 
